@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Regular.ttf">
+            <string>Comfortaa-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="commentCell" rowHeight="27" id="uHP-jd-kmc" customClass="CommentTableCell" customModule="Bloom" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="199"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uHP-jd-kmc" id="dXl-37-BYN">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="198.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cq3-Hm-Dak">
+                        <rect key="frame" x="18" y="8" width="187" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="187" id="UqB-E7-ahJ"/>
+                            <constraint firstAttribute="height" constant="21" id="V41-tL-38L"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9E-I2-er4">
+                        <rect key="frame" x="252" y="8" width="105" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Lg0-6u-eP6"/>
+                            <constraint firstAttribute="width" constant="105" id="uHt-qN-5Af"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prg-Vc-zaa">
+                        <rect key="frame" x="18" y="38" width="339" height="150"/>
+                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="prg-Vc-zaa" firstAttribute="top" secondItem="z9E-I2-er4" secondAttribute="bottom" constant="9" id="2lW-MB-iIy"/>
+                    <constraint firstItem="Cq3-Hm-Dak" firstAttribute="leading" secondItem="dXl-37-BYN" secondAttribute="leadingMargin" constant="10" id="3ZK-Lb-1hy"/>
+                    <constraint firstItem="z9E-I2-er4" firstAttribute="trailing" secondItem="dXl-37-BYN" secondAttribute="trailingMargin" constant="-10" id="IfU-mk-ogn"/>
+                    <constraint firstItem="Cq3-Hm-Dak" firstAttribute="top" secondItem="dXl-37-BYN" secondAttribute="topMargin" id="Lxo-aE-EuJ"/>
+                    <constraint firstItem="prg-Vc-zaa" firstAttribute="leading" secondItem="dXl-37-BYN" secondAttribute="leadingMargin" constant="10" id="VhZ-zK-Ku9"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="prg-Vc-zaa" secondAttribute="bottom" constant="2" id="bwx-dz-i48"/>
+                    <constraint firstItem="prg-Vc-zaa" firstAttribute="top" secondItem="Cq3-Hm-Dak" secondAttribute="bottom" constant="9" id="keg-kU-4VR"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="prg-Vc-zaa" secondAttribute="trailing" constant="10" id="uHj-Lt-AFm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+            <connections>
+                <outlet property="comment" destination="prg-Vc-zaa" id="B74-vT-igM"/>
+                <outlet property="date" destination="z9E-I2-er4" id="MSE-3T-0bH"/>
+                <outlet property="name" destination="Cq3-Hm-Dak" id="9ti-lN-fkE"/>
+                <outlet property="topMargin" destination="Lxo-aE-EuJ" id="oDE-1r-fLj"/>
+            </connections>
+            <point key="canvasLocation" x="-53.5" y="-24.5"/>
+        </tableViewCell>
+    </objects>
+</document>

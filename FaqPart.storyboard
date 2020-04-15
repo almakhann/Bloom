@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="slR-f3-O8B">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--F.A.Q.-->
+        <scene sceneID="Ezx-ma-LVy">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="6ea-sP-VkR" customClass="FaqPartViewController" customModule="Bloom" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fOo-Yr-sQK"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Vf-mA-sht"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9KJ-e4-AWy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" sectionIndexMinimumDisplayRowCount="1" allowsSelection="NO" rowHeight="107" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uBU-8L-0Ny">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="faqCell" rowHeight="107" id="ira-mn-z1u" customClass="faqCell" customModule="Bloom" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="107"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ira-mn-z1u" id="Ubo-F0-ljO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="106.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Что представляет собой ПО Photoshop CC и для кого оно предназначено?" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFt-Yq-gxg">
+                                                    <rect key="frame" x="20" y="0.0" width="343" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="42" id="zFJ-nx-nNE"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.76078431369999999" green="0.63137254899999995" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adobe Photoshop CC — это передовое программное обеспечение для обработки цифровых изображений, которое используют фотографы." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbM-Ew-EC0">
+                                                    <rect key="frame" x="12" y="42" width="351" height="56"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="56" id="WYT-ap-8BB"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="OFt-Yq-gxg" firstAttribute="leading" secondItem="Ubo-F0-ljO" secondAttribute="leadingMargin" constant="12" id="Ggs-wz-Lmp"/>
+                                                <constraint firstItem="mbM-Ew-EC0" firstAttribute="bottom" secondItem="Ubo-F0-ljO" secondAttribute="bottomMargin" id="Sc3-HG-ARv"/>
+                                                <constraint firstAttribute="trailing" secondItem="OFt-Yq-gxg" secondAttribute="trailing" constant="12" id="X9Q-vf-yTZ"/>
+                                                <constraint firstItem="mbM-Ew-EC0" firstAttribute="top" secondItem="OFt-Yq-gxg" secondAttribute="bottom" id="fgM-ZE-Bh7"/>
+                                                <constraint firstItem="mbM-Ew-EC0" firstAttribute="leading" secondItem="Ubo-F0-ljO" secondAttribute="leading" constant="12" id="sjl-rT-6OJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="mbM-Ew-EC0" secondAttribute="trailing" constant="12" id="vK4-Fw-Y7T"/>
+                                                <constraint firstItem="OFt-Yq-gxg" firstAttribute="top" secondItem="Ubo-F0-ljO" secondAttribute="top" id="ws3-7m-sB2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="answerLabel" destination="mbM-Ew-EC0" id="y6s-IU-Axh"/>
+                                            <outlet property="questionLabel" destination="OFt-Yq-gxg" id="5f7-sv-cDQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uBU-8L-0Ny" secondAttribute="trailing" id="4pg-HS-gEx"/>
+                            <constraint firstItem="uBU-8L-0Ny" firstAttribute="leading" secondItem="9KJ-e4-AWy" secondAttribute="leading" id="R4b-gS-ogT"/>
+                            <constraint firstItem="uBU-8L-0Ny" firstAttribute="top" secondItem="fOo-Yr-sQK" secondAttribute="bottom" id="eip-VQ-Ihe"/>
+                            <constraint firstItem="6Vf-mA-sht" firstAttribute="top" secondItem="uBU-8L-0Ny" secondAttribute="bottom" id="y68-0E-2sO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="F.A.Q." id="1do-1A-ZDP"/>
+                    <connections>
+                        <outlet property="tableview" destination="uBU-8L-0Ny" id="PQA-RF-Tb0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CPW-gD-wM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1437.5999999999999" y="-136.28185907046478"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GWa-Jh-ssV">
+            <objects>
+                <navigationController storyboardIdentifier="FaqPartViewController" automaticallyAdjustsScrollViewInsets="NO" id="slR-f3-O8B" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sdq-rR-8oS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6ea-sP-VkR" kind="relationship" relationship="rootViewController" id="b3Y-h0-2Uy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vk3-OU-fdJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="530.43478260869574" y="-136.14130434782609"/>
+        </scene>
+    </scenes>
+</document>

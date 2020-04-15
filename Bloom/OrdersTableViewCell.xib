@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Regular.ttf">
+            <string>Comfortaa-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="orderCell" id="KGk-i7-Jjw" customClass="OrdersTableViewCell" customModule="Bloom" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="415" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0HX-HX-POL">
+                        <rect key="frame" x="3" y="3" width="409" height="123.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sa3-Ke-fwf">
+                                <rect key="frame" x="10" y="97.5" width="60" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="7Ug-wR-0ch"/>
+                                    <constraint firstAttribute="width" constant="60" id="rKf-wc-BHZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAISON de Beaute" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfy-2C-Pvf">
+                                <rect key="frame" x="198" y="90" width="200" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="IN2-ga-ZCe"/>
+                                    <constraint firstAttribute="height" constant="28" id="aE9-yP-jwa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="0.54725843558282206" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="sa3-Ke-fwf" secondAttribute="bottom" constant="5" id="Sec-r9-ipp"/>
+                            <constraint firstItem="sa3-Ke-fwf" firstAttribute="leading" secondItem="0HX-HX-POL" secondAttribute="leading" constant="10" id="UwB-If-MMw"/>
+                            <constraint firstAttribute="trailing" secondItem="yfy-2C-Pvf" secondAttribute="trailing" constant="11" id="par-AP-RvP"/>
+                            <constraint firstAttribute="bottom" secondItem="yfy-2C-Pvf" secondAttribute="bottom" constant="5" id="yZt-Zb-hBa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="0HX-HX-POL" secondAttribute="bottom" constant="3" id="GpU-Qk-Gkg"/>
+                    <constraint firstItem="0HX-HX-POL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="R3Q-Mj-bkD"/>
+                    <constraint firstItem="0HX-HX-POL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="eUD-p2-r6l"/>
+                    <constraint firstAttribute="trailing" secondItem="0HX-HX-POL" secondAttribute="trailing" constant="3" id="yUC-i8-ywP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="orderTime" destination="sa3-Ke-fwf" id="ZmV-Qw-fSp"/>
+                <outlet property="salonName" destination="yfy-2C-Pvf" id="Kla-mB-ZK5"/>
+            </connections>
+            <point key="canvasLocation" x="71.5" y="72"/>
+        </tableViewCell>
+    </objects>
+</document>

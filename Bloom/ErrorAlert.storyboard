@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Regular.ttf">
+            <string>Comfortaa-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Error Alert Show-->
+        <scene sceneID="X8i-qt-d1J">
+            <objects>
+                <viewController storyboardIdentifier="ErrorAlert" id="lSA-X9-iW9" customClass="ErrorAlertShow" customModule="Bloom" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HFC-u0-96H"/>
+                        <viewControllerLayoutGuide type="bottom" id="RKM-sD-XlO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NYH-Uo-PIb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="imx-9E-v51">
+                                <rect key="frame" x="75" y="268.5" width="225" height="130"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заполните поле" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGR-3r-oxV">
+                                        <rect key="frame" x="5" y="70" width="215" height="52"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="error" translatesAutoresizingMaskIntoConstraints="NO" id="rRK-W1-sFu">
+                                        <rect key="frame" x="90" y="19.5" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="bZk-k9-alO"/>
+                                            <constraint firstAttribute="height" constant="45" id="rdl-VF-NLS"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.099837404820000003" green="0.099837404820000003" blue="0.099837404820000003" alpha="0.83830265410958904" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="dGR-3r-oxV" secondAttribute="trailing" constant="5" id="C6h-ap-9cH"/>
+                                    <constraint firstAttribute="bottom" secondItem="dGR-3r-oxV" secondAttribute="bottom" constant="8" id="Dvo-XU-9QJ"/>
+                                    <constraint firstItem="dGR-3r-oxV" firstAttribute="centerX" secondItem="imx-9E-v51" secondAttribute="centerX" id="UdO-bv-BEB"/>
+                                    <constraint firstItem="rRK-W1-sFu" firstAttribute="top" secondItem="imx-9E-v51" secondAttribute="top" constant="20" id="bGP-p0-ryH"/>
+                                    <constraint firstItem="dGR-3r-oxV" firstAttribute="top" secondItem="rRK-W1-sFu" secondAttribute="bottom" constant="5" id="ifk-pJ-yvk"/>
+                                    <constraint firstItem="rRK-W1-sFu" firstAttribute="centerX" secondItem="imx-9E-v51" secondAttribute="centerX" id="mGy-Iw-09i"/>
+                                    <constraint firstItem="dGR-3r-oxV" firstAttribute="leading" secondItem="imx-9E-v51" secondAttribute="leading" constant="5" id="o4H-1m-rfJ"/>
+                                    <constraint firstAttribute="height" constant="130" id="zCz-d0-5rD"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="imx-9E-v51" firstAttribute="centerY" secondItem="NYH-Uo-PIb" secondAttribute="centerY" id="JX8-9q-MOf"/>
+                            <constraint firstItem="imx-9E-v51" firstAttribute="leading" secondItem="NYH-Uo-PIb" secondAttribute="leading" constant="75" id="cm6-WV-ezz"/>
+                            <constraint firstAttribute="trailing" secondItem="imx-9E-v51" secondAttribute="trailing" constant="75" id="n2c-5e-bST"/>
+                            <constraint firstItem="imx-9E-v51" firstAttribute="centerX" secondItem="NYH-Uo-PIb" secondAttribute="centerX" id="ud0-Ui-DYC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="errorMessege" destination="dGR-3r-oxV" id="nVn-eJ-vAf"/>
+                        <outlet property="errorView" destination="imx-9E-v51" id="xBV-7z-woA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CDi-71-yWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1196" y="-89.505247376311857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="error" width="255" height="255"/>
+    </resources>
+</document>

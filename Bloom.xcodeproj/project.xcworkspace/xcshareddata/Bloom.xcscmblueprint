@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0951B2A2E1550A54629792B5585ED30F3EAE616A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "95FF6442FAA788CFC661F484B6B0070A11E7754D" : 9223372036854775807,
+    "0951B2A2E1550A54629792B5585ED30F3EAE616A" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "05C9FB9F-A1A6-4C8A-9D87-368A37A106B6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "95FF6442FAA788CFC661F484B6B0070A11E7754D" : "Documents\/locationPart\/",
+    "0951B2A2E1550A54629792B5585ED30F3EAE616A" : "bloom-ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Bloom",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Bloom.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/lab-518\/bloom-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0951B2A2E1550A54629792B5585ED30F3EAE616A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git%20clone%20git@bitbucket.org%3Alab-518\/bloom-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "95FF6442FAA788CFC661F484B6B0070A11E7754D"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fuS-Ts-WCd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Faq Part View Controller-->
+        <scene sceneID="sXF-4m-A7B">
+            <objects>
+                <viewController storyboardIdentifier="FaqPartViewController" id="fuS-Ts-WCd" customClass="FaqPartViewController" customModule="Bloom" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ETF-z9-TAY"/>
+                        <viewControllerLayoutGuide type="bottom" id="yQm-ta-L1Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xvA-DY-LbF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAQ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bju-MW-8uI">
+                                <rect key="frame" x="84" y="323" width="207" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="207" id="UVo-Xd-J7p"/>
+                                    <constraint firstAttribute="height" constant="21" id="qTt-gi-gDk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bju-MW-8uI" firstAttribute="centerX" secondItem="xvA-DY-LbF" secondAttribute="centerX" id="X0q-Lf-IS9"/>
+                            <constraint firstItem="bju-MW-8uI" firstAttribute="centerY" secondItem="xvA-DY-LbF" secondAttribute="centerY" id="csa-Ri-2C7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tGa-1M-i2h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205.59999999999999" y="102.99850074962519"/>
+        </scene>
+    </scenes>
+</document>

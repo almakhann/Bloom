@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tabBarController id="Gcc-wA-1rh" customClass="TabBarMenu" customModule="Bloom" customModuleProvider="target">
+            <tabBar key="tabBar" contentMode="scaleToFill" id="0W4-md-trq">
+                <rect key="frame" x="0.0" y="687" width="414" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </tabBar>
+            <viewControllers>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="tYV-fH-FuF" customClass="UserSettingsPartViewController" customModule="Bloom" customModuleProvider="target">
+                    <tabBarItem key="tabBarItem" title="" id="tB7-xZ-tWn">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                </viewController>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Pqz-XN-wKn" customClass="CalendarPartViewController" customModule="Bloom" customModuleProvider="target">
+                    <tabBarItem key="tabBarItem" id="4Ok-Cs-VtA">
+                        <inset key="imageInsets" minX="0.0" minY="9" maxX="0.0" maxY="-9"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                </viewController>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="id6-ft-D1u" customClass="MapPartViewController" customModule="Bloom" customModuleProvider="target">
+                    <tabBarItem key="tabBarItem" title="" id="NOA-XR-A8N">
+                        <inset key="imageInsets" minX="3" minY="12" maxX="3" maxY="-2"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                </viewController>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="2wq-7W-4T6" customClass="ChatPartViewController" customModule="Bloom" customModuleProvider="target">
+                    <tabBarItem key="tabBarItem" title="" id="fOj-RI-aiM">
+                        <inset key="imageInsets" minX="0.0" minY="9" maxX="0.0" maxY="-9"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                </viewController>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="q6R-nl-kay" customClass="FaqPartViewController" customModule="Bloom" customModuleProvider="target">
+                    <tabBarItem key="tabBarItem" title="" id="nXX-Hk-XnM">
+                        <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="-8"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                </viewController>
+            </viewControllers>
+            <point key="canvasLocation" x="593" y="16"/>
+        </tabBarController>
+    </objects>
+</document>

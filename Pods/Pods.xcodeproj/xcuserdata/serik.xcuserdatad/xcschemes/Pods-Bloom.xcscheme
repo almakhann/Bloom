@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0700"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForAnalyzing = "YES"
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES">
+            <BuildableReference
+<<<<<<< HEAD:Pods/Pods.xcodeproj/xcuserdata/serik.xcuserdatad/xcschemes/Pods-Bloom.xcscheme
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0BC8D93A0090D07732C4A0C305E16654"
+               BuildableName = "Pods_Bloom.framework"
+               BlueprintName = "Pods-Bloom"
+               ReferencedContainer = "container:Pods.xcodeproj">
+=======
+               BuildableIdentifier = 'primary'
+               BlueprintIdentifier = 'FBADBF460A0A6D62E2CC6361714DB368'
+               BlueprintName = 'SDWebImage'
+               ReferencedContainer = 'container:Pods.xcodeproj'
+               BuildableName = 'SDWebImage.framework'>
+>>>>>>> nassyrkhan-dev:Pods/Pods.xcodeproj/xcuserdata/nassyrkhanseitzhapparuly.xcuserdatad/xcschemes/SDWebImage.xcscheme
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      buildConfiguration = "Debug">
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      buildConfiguration = "Debug"
+      allowLocationSimulation = "YES">
+<<<<<<< HEAD:Pods/Pods.xcodeproj/xcuserdata/serik.xcuserdatad/xcschemes/Pods-Bloom.xcscheme
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "0BC8D93A0090D07732C4A0C305E16654"
+            BuildableName = "Pods_Bloom.framework"
+            BlueprintName = "Pods-Bloom"
+            ReferencedContainer = "container:Pods.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+=======
+>>>>>>> nassyrkhan-dev:Pods/Pods.xcodeproj/xcuserdata/nassyrkhanseitzhapparuly.xcuserdatad/xcschemes/SDWebImage.xcscheme
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+<<<<<<< HEAD:Pods/Pods.xcodeproj/xcuserdata/serik.xcuserdatad/xcschemes/Pods-Bloom.xcscheme
+      debugDocumentVersioning = "YES">
+=======
+      debugDocumentVersioning = "YES"
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+>>>>>>> nassyrkhan-dev:Pods/Pods.xcodeproj/xcuserdata/nassyrkhanseitzhapparuly.xcuserdatad/xcschemes/SDWebImage.xcscheme
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
